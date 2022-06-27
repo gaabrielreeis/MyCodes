@@ -1,0 +1,13 @@
+XGBoost:
+  https://slundberg.github.io/shap/notebooks/Census%20income%20classification%20with%20XGBoost.html #notebook
+  https://towardsdatascience.com/interpretable-machine-learning-with-xgboost-9ec80d148d27 #site
+  
+ 
+there are three options for measuring feature importance in XGBoost:
+
+Weight. The number of times a feature is used to split the data across all trees.
+Cover. The number of times a feature is used to split the data across all trees weighted by the number of training data points that go through those splits.
+Gain. The average training loss reduction gained when using a feature for splitting.
+
+
+ 
