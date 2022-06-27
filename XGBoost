@@ -10,4 +10,16 @@ Cover. The number of times a feature is used to split the data across all trees 
 Gain. The average training loss reduction gained when using a feature for splitting.
 
 
+define two properties that we think any good feature attribution method should follow:
+
+Consistency. Whenever we change a model such that it relies more on a feature, then the attributed importance for that feature should not decrease.
+Accuracy. The sum of all the feature importances should sum up to the total importance of the model. (For example if importance is measured by
+          the R² value then the attribution to each feature should sum to the R² of the full model)
+          
+          
+Here we will define importance two ways: 
+1) as the change in the model’s expected accuracy when we remove a set of features. 
+2) as the change in the model’s expected output when we remove a set of features.
+
+
  
